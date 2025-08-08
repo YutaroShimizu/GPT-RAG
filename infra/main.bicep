@@ -97,7 +97,7 @@ param deploySearchService bool = true
 param deployStorageAccount bool = true
 
 @description('Deploy an Azure Cosmos DB account for globally distributed NoSQL data storage.')
-param deployCosmosDb bool = true
+param deployCosmosDb bool = false
 
 @description('Deploy Azure Container Apps for running your microservices in a serverless Kubernetes environment.')
 param deployContainerApps bool = true
@@ -2387,7 +2387,7 @@ var outputModelDeploymentSettings = [
   }
 ]
 
-module appConfigPopulate 'modules/app-configuration/app-configuration.bicep' = if (deployAppConfig) {
+module appConfigPopulate 'modules/app-configuration/app-configuration.bicep' = if (deployCosmosDb) {
   name: 'appConfigPopulate'
   params: {
     #disable-next-line BCP318

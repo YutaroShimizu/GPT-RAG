@@ -18,18 +18,18 @@
     
     "deployAppConfig":                      { "value": "true" },
     "deployAppInsights":                    { "value": "true" },
-    "deployCosmosDb":                       { "value": "true" },
+    "deployCosmosDb":                       { "value": "false" },
     "deployContainerApps":                  { "value": "true" },
-    "deployContainerRegistry":              { "value": "true" },
+    "deployContainerRegistry":              { "value": "false" },
     "deployContainerEnv":                   { "value": "true" },
-    "deployMcp":                            { "value": "true" },
-    "deployGroundingWithBing":              { "value": "true" },
+    "deployMcp":                            { "value": "false" },
+    "deployGroundingWithBing":              { "value": "false" },
     "deployKeyVault":                       { "value": "true" },
     "deployLogAnalytics":                   { "value": "true" },
     "deploySearchService":                  { "value": "true" },
     "deployStorageAccount":                 { "value": "true" },
-    "greenFieldDeployment":                 { "value": "true" },
-    "deployVM":                             { "value": "true" },
+    "greenFieldDeployment":                 { "value": "false" },
+    "deployVM":                             { "value": "false" },
 
     "aiFoundryAccountName":                  { "value": null },
     "aiFoundryProjectName":                  { "value": null },
@@ -115,24 +115,7 @@
     },  
 
     "databaseContainersList": {
-      "value": [
-        {
-          "name": "conversations",
-          "canonical_name": "CONVERSATIONS_DATABASE_CONTAINER"
-        },
-        {
-          "name": "datasources",
-          "canonical_name": "DATASOURCES_DATABASE_CONTAINER"
-        },
-        {
-          "name": "prompts",
-          "canonical_name": "PROMPTS_CONTAINER"
-        },
-        {
-          "name": "mcp",
-          "canonical_name": "MCP_CONTAINER"
-        }
-      ]
+      "value": []
     },
 
     "containerAppsList": {
